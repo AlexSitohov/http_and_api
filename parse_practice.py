@@ -8,6 +8,6 @@ response = requests.get(url=url).text
 bs = BeautifulSoup(response, 'html.parser')
 data = bs.find_all(class_='shortstory')
 for i in data:
-    print(i.find(class_='current-rating').get_text(), i.find('a').get_text(),  i.find('a')['href'], '\n')
+    print(i.find(class_='current-rating1').get_text(), i.find('a').get_text(),  i.find('a')['href'], '\n')
 
 
