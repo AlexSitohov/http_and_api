@@ -3,7 +3,7 @@ from requests import Response
 
 url = 'https://earthquake.usgs.gov/fdsnws/event/1/query?'
 response: Response = requests.get(url, headers={'Accept': 'application/json'}, params={
-    'format': 'megageojson',
+    'format': 'geojson',
     'starttime': '2010-01-01',
     'endtime': '2020-01-01',
     'latitude': input('Широта '),
